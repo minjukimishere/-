@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--콘텐츠속성정보-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--기기인식-->
+        <title>Login</title>
+    </head>
+    <body>
+        <form action="#"> <!--해당 페이지로 이동-->
+            <fieldset> <!--그룹으로 묶은 요소들 주변으로 박스 그리기-->
+                <legend>로그인</legend><!--요소의 캡션(사진,삽화 등에 붙인 설명) 정의-->
+                <button type="button">
+                    Log in with Google
+                </button>
+            </fieldset>
+            <p>or</p>
+            <fieldset>
+                <legend>일반 로그인</legend>
+                <label for="username"> <!--라벨 요소는 for 속성을 사용하여 다른 요소와 결합할 수 있으며, 결합하고자 하는 요소의 id(아래) 값과 일치해야한다.-->
+                    <input type="text" id="username" name="username" placeholder="Username">
+                </label>
+                <label for="password"> <!--라벨 요소는 for 속성을 사용하여 다른 요소와 결합할 수 있으며, 결합하고자 하는 요소의 id(아래) 값과 일치해야한다.-->
+                    <input type="password" id="password" name="password" placeholder="Password">
+                </label>
+                <button type="submit">
+                    LOGIN
+                </button>
+        </fieldset>
+        <a href="#">Forgot your password?</a>
+        </form>
+    </body>
+</html>

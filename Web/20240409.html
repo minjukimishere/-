@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--콘텐츠속성정보-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--기기인식-->
+        <title>My First Web Page!</title>
+    </head>
+    <body>
+        <!--웹 페이지에 표시할 내용을 적습니다-->
+        <p>나의 첫 번째 웹 페이지</p>
+
+        <form action="#" method="post"> <!--폼 양식을 의미 action: 전송할 서버의 URL 주소, method: 속성: 송신 방식. get 또는 post(값 또는 변수)-->
+            <filedset><!--관련 있는 폼 요소끼리 그룹을 지을 때 사용-->
+                <legend>개인 정보 입력</legend><!--그룹 지은 요소에 이름을 붙일 때 사용-->
+                    <label for="city">지역</label> <!--폼 요소에 이름을 붙힐 때 사용-->
+                    <select name="city" id="city"> <!-- 콤보박스 생성-->
+                        <option value="강북구">강북구</option> <!-- 콤보박스에 항목 추가-->
+                        <option value="강남구">강남구</option>
+                        <option value="서초구" selected>서초구</option>
+                        <option value="중원구">중원구</option>
+                        <option value="분당구">분당구</option>
+                    </select>
+                    <input type="submit" value="등록"> <!--type 등록 value 초깃값-->
+            </filedset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--콘텐츠속성정보-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--기기인식-->
+        <title>강의 시간표</title>
+        <style>
+            ul {list-style-type: none;}
+            input:checked+label {color: red;}
+        </style>
+    </head>
+    <body>
+       <h5>강의 시간표</h5>
+       <table border="1"><!--표-->        
+        <colgroup>
+            <col style="background-color: lightskyblue">
+        </colgroup>
+        <tr style="background-color: lightgray;"><!--1행 row-->
+            <th>구분</th><!--제목행-->
+            <th width="250">월</th>
+            <th width="250">화</th>
+            <th width="250">수</th>
+            <th width="250">목</th>
+            <th width="250">금</th>
+        </tr>
+        <tr><!--2행-->
+            <td><b>1교시</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr><!--3행-->
+            <td><b>2교시</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td style="background-color: yellow;">소프트웨어공학</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr><!--4행-->
+            <td><b>3교시</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan=2 style="background-color: yellow;">기업연계프로젝트 2</td>
+        </tr>
+        <tr><!--5행-->
+            <td><b>4교시</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr><!--6행-->
+            <td><b>5교시</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td rowspan=2 style="background-color: yellow;">디지털경제학</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr><!--7행-->
+            <td><b>6교시</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr><!--8행-->
+            <td><b>7교시</b></td>
+            <td>&nbsp;</td>
+            <td rowspan=2 style="background-color: yellow;">소프트웨어공학</td>
+            <td rowspan=4 style="background-color: yellow;">고급자바프로그래밍</td>
+            <td rowspan=2 style="background-color: yellow;">평화의이해</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr><!--9행-->
+            <td><b>8교시</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr><!--10행-->
+            <td><b>9교시</b></td>
+            <td>&nbsp;</td>
+            <td rowspan=2 style="background-color: yellow;">실무웹클라이언트프로그래밍</td>
+            <td rowspan=2 style="background-color: yellow;">실무웹클라이언트프로그래밍</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr><!--11행-->
+            <td><b>10교시</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        </table>
+        <p>
+            <table border=1>
+                <tr><!--1행 row-->
+                    <td>취미</td>
+                    <td>
+                        <input type="checkbox" value="cleaning" id="cleaning"><label for="cleaning">청소</label>
+                        <input type="checkbox" value="listening" id="listening"><label for="listening">음악듣기</label>
+                        <input type="checkbox" value="meaditation" id="meaditation"><label for="meaditation">명상</label>
+                    </td>
+                </tr>
+            </table>
+            <h5>전공</h5>
+            <ul>
+                <li>
+                    <label><input type="radio" name="filed" value="">문예창작학</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="filed" value="">게임콘텐츠학과</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="filed" value="">인공지능융합학과</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="filed" value="">정보통신공학과</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="filed" value="">컴퓨터소프트웨어공학과</label>
+                </li>
+            </ul>
+            <input type="submit" value="저장">
+        </p>
+    </body>
+</html>

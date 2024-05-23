@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--콘텐츠속성정보-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--기기인식-->
+        <title>강의 시간표</title>
+        <style>
+            ul {list-style-type: none;}
+        </style>
+    </head>
+    <body>
+       <h3>강의 시간표</h3>
+       <table border="1"><!--표-->        
+        <tr><!--1행 row-->
+            <th>구분</th><!--제목행-->
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+        <tr><!--2행-->
+            <td><b>1교시</b></td>
+            <td rowspan=2>웹 기획</td>
+            <td rowspan=2>웹 디자인</td>
+            <td rowspan=2>HTML</td>
+            <td rowspan=2>웹 디자인</td>
+            <td>영어</td>
+        </tr>
+        <tr><!--3행-->
+            <td><b>2교시</b></td>
+            <td rowspan=4>야외수업</td>
+        </tr>
+        <tr><!--4행-->
+            <td><b>3교시</b></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr><!--5행-->
+            <td><b>4교시</b></td>
+            <td rowspan=2>UI 디자인</td>
+            <td rowspan=2>자바스크립트</td>
+            <td rowspan=2>모바일 디자인</td>
+            <td rowspan=2>HTML</td>
+        </tr>
+        <tr><!--6행-->
+            <td><b>5교시</b></td>
+        </tr>
+        </table>
+        <p>
+            <table border=1>
+                <tr><!--1행 row-->
+                    <td>취미</td>
+                    <td>
+                        <input type="checkbox" value="reading" id="reading"><label for="reading">독서</label>
+                        <input type="checkbox" value="cooking" id="cooking"><label for="cooking">요리</label>
+                        <input type="checkbox" value="running" id="running"><label for="running">조깅</label>
+                        <input type="checkbox" value="swimming" id="swimming"><label for="swimming">수영</label>
+                        <input type="checkbox" value="sleeping" id="sleeping"><label for="sleeping">취침</label>
+                        <input type="checkbox" value="etc" id="etc"><label for="etc">기타</label><input type="text" id="etc_input">
+                    </td>
+                </tr>
+            </table>
+            <h4>전공</h4>
+            <ul>
+                <li>
+                    <label><input type="radio" name="filed" value="">국문학과</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="filed" value="">컴퓨터공학과</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="filed" value="">문예창작과</label>
+                </li>
+            </ul>
+            <input type="submit" value="저장">
+        </p>
+    </body>
+</html>
